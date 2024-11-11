@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        col.rosa{
+            background-color: rgb(212, 0, 177);
+        }
+
+        th{
+            background-color: rgba(27, 27, 27, 0.589);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.452);
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+
+        <colgroup>
+            <col class="rosa">
+            <col class="branco">
+            <col class="rosa">
+            <col class="branco">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Engenheiro de Software</td>
+            </tr>
+
+            <tr>
+                <td>Gláucia</td>
+                <td>F</td>
+                <td>51</td>
+                <td>Professora</td>
+            </tr>
+
+            <tr>
+                <td>Marcelo Gomes</td>
+                <td>M</td>
+                <td>57</td>
+                <td>Sindico</td>
+            </tr>
+
+            <tr>
+                <td>Cláudia</td>
+                <td>F</td>
+                <td>43</td>
+                <td>Advogada</td>
+            </tr>
+
+            <tr>
+                <td>Eloah</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Designer de Moda</td>
+            </tr>
+
+            <tr>
+                <td>Samuel</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Médico</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
